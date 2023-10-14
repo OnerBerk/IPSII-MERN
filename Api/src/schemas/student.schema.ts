@@ -1,5 +1,5 @@
 import mongoose ,{Schema,model}from "mongoose";
-import {IStudent} from "../domain/student.interface";
+import {IStudent} from "../domain/domain";
 
 const StudentSchema = new Schema<IStudent>({
     name: {type:String,required:true},

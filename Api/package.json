@@ -8,7 +8,7 @@
     "dev": "ts-node-dev --respawn src/index.ts",
     "dev:debug": "ts-node-dev --inspect=0.0.0.0:9229 src/index.ts",
     "build": "tsc",
-    "start": "node dist/server.js"
+    "start": "node dist/index.js"
   },
   "author": "Öner",
   "license": "ISC",
@@ -17,7 +17,8 @@
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "helmet": "^7.0.0",
-    "ts-node-dev": "^2.0.0"
+    "ts-node-dev": "^2.0.0",
+    "mongoose": "^7.6.2"
   },
   "devDependencies": {
     "@types/cors": "^2.8.14",
@@ -25,6 +26,7 @@
     "@types/express": "^4.17.19",
     "@types/helmet": "^4.0.0",
     "@types/node": "^20.8.5",
+    "@types/mongoose": "^5.11.97",
     "express": "^4.18.2",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"

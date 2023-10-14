@@ -1,10 +1,12 @@
 const express = require('express')
-const dotenv = require('dotenv')
+require('dotenv').config();
 import {Request, Response} from "express";
+import {json} from 'body-parser'
+import {connectDB} from "./config/db"
 
 const app = express()
-const port: string | number = process.env.PORT || 8080
-
+const port = process.env.PORT || 8080
+connectDB();
 app.get('/', (req: Request, res: Response) => {
     res.send('Welcome to Mern')
 })
